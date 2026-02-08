@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Propose Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#6a1b9a,#ad1457);
+  font-family:'Segoe UI', sans-serif;
+  color:#ffffff;
+}
+.card{
+  width:90%;
+  max-width:430px;
+  background:rgba(255,255,255,0.15);
+  padding:28px;
+  border-radius:22px;
+  text-align:center;
+  box-shadow:0 15px 35px rgba(0,0,0,0.45);
+}
+h1{
+  font-size:26px;
+  margin-bottom:12px;
+}
+p{
+  display:none;
+  font-size:18px;
+  line-height:1.6;
+  margin-top:16px;
+}
+button{
+  margin-top:24px;
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  background:#ffffff;
+  color:#6a1b9a;
+  cursor:pointer;
+}
+.signature{
+  margin-top:20px;
+  font-size:16px;
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>🌹 Supriya 🌹</h1>
+
+<p id="m1">Aaj Propose Day hai.</p>
+<p id="m2">Main apne jazbaat poore sammaan aur sachchai ke saath vyakt karna chahta hoon.</p>
+<p id="m3">Aap meri zindagi mein ek vishesh sthaan rakhti hain.</p>
+<p id="m4">Agar aap anumati dein, to main is rishte ko ek khoobsurat shuruaat dena chahta hoon.</p>
+<p id="m5"><b>Kya aap mere saath is safar ko aage badhaana pasand karengi?</b></p>
+
+<div class="signature" id="sign">— Anooj</div>
+
+<button onclick="showMessage()">Read Message 🌹</button>
+</div>
+
+<script>
+let i = 1;
+function showMessage(){
+  if(i <= 5){
+    document.getElementById("m"+i).style.display = "block";
+    i++;
+  } else {
+    document.getElementById("sign").style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
